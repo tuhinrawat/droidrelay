@@ -1,0 +1,34 @@
+# Generate the Xcode project with:  brew install xcodegen && xcodegen
+name: RelaySpike
+options:
+  bundleIdPrefix: app.relay
+  deploymentTarget:
+    macOS: "13.0"
+targets:
+  RelaySpike:
+    type: application
+    platform: macOS
+    sources:
+      - RelaySpike
+    info:
+      path: RelaySpike/Info.plist
+      properties:
+        CFBundleDisplayName: Relay Spike
+        CFBundleShortVersionString: "0.1"
+        CFBundleVersion: "1"
+        LSUIElement: true # menu bar only, no Dock icon
+        NSLocalNetworkUsageDescription: Relay finds and talks to your Android phone on your Wi-Fi.
+        NSBonjourServices:
+          - _relay._tcp
+    entitlements:
+      path: RelaySpike/RelaySpike.entitlements
+      properties:
+        com.apple.security.app-sandbox: true # same restrictions as the Mac App Store
+        com.apple.security.network.server: true
+        com.apple.security.network.client: true
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: app.relay.spike.mac
+        SWIFT_VERSION: "5.0"
+        CODE_SIGN_STYLE: Automatic
+        ENABLE_HARDENED_RUNTIME: YES

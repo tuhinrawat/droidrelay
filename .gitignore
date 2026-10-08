@@ -1,0 +1,23 @@
+# macOS
+.DS_Store
+
+# Gradle / Android
+.gradle/
+build/
+local.properties
+*.iml
+.idea/
+captures/
+*.apk
+*.aab
+
+# Xcode (project is generated from mac/project.yml by XcodeGen)
+mac/*.xcodeproj/
+DerivedData/
+xcuserdata/
+*.xcuserstate
+mac/RelaySpike/Info.plist
+mac/RelaySpike/RelaySpike.entitlements
+
+# Kotlin
+.kotlin/

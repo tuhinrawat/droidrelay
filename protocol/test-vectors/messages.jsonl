@@ -1,0 +1,10 @@
+{"v":0,"type":"hello","deviceId":"a1b2","name":"Pixel 8","platform":"android","appVersion":"0.1"}
+{"v":0,"type":"ping"}
+{"v":0,"type":"pong"}
+{"v":0,"type":"battery","level":82,"charging":true}
+{"v":0,"type":"notification.posted","id":"0|com.whatsapp|1|null|10123","app":"com.whatsapp","appName":"WhatsApp","title":"Mom","text":"Coming for dinner?","time":1760000000000,"canReply":true}
+{"v":0,"type":"notification.removed","id":"0|com.whatsapp|1|null|10123"}
+{"v":0,"type":"notification.reply","id":"0|com.whatsapp|1|null|10123","text":"Yes, on my way"}
+{"v":0,"type":"reply.result","id":"0|com.whatsapp|1|null|10123","ok":true}
+{"v":0,"type":"reply.result","id":"x","ok":false,"error":"Notification no longer exists"}
+{"v":0,"type":"future.thing","someField":1}
